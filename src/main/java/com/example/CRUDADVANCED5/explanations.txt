@@ -1,0 +1,29 @@
+1. Add Lombok dependency
+lombok is for stopping writing getters, setters, constructors manually
+
+I    @Data       // Getter, Setter, ToString, EqualsAndHashCode I
+I    @NoArgsConstructor                                         I
+I    @AllArgsConstructor                                        I
+I    @Builder    // Fluent builder pattern                      I
+
+
+DTO - Data Transfer Object
+There are some data types like passwords, adresses that shouldn't be sent to the frontend.
+DTO is for sending only necessary data.
+
+
+return bookRepository.findAll().stream()
+        .map(book -> modelMapper.map(book, BooksDTO.class))
+        .collect(Collectors.toList());
+
+Explanation: 
+🔍 What this line does (in plain English):
+It:
+
+Fetches all Book entities from the database.
+
+Converts each Book entity into a BooksDTO using ModelMapper.
+
+Collects the converted DTOs into a List<BooksDTO>.
+
+Returns the result.
