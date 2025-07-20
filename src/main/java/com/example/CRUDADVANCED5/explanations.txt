@@ -1,3 +1,4 @@
+DAY 5
 1. Add Lombok dependency
 lombok is for stopping writing getters, setters, constructors manually
 
@@ -27,3 +28,33 @@ Converts each Book entity into a BooksDTO using ModelMapper.
 Collects the converted DTOs into a List<BooksDTO>.
 
 Returns the result.
+
+DAY 6
+Swagger is a set of tools of documenting and testing REST APIs.
+
+🔧 What Does Swagger Do?
+1. Generates API Documentation Automatically
+Once you annotate your controllers, Swagger will:
+
+List all your endpoints
+
+Show request/response examples
+
+Display parameter types
+
+All of this — live, interactive, and updated instantly.
+
+2. Provides a UI (Swagger UI)
+Swagger creates a browser-based UI at http://localhost:8080/swagger-ui.html:
+
+You can:
+
+View endpoints
+
+Fill request bodies
+
+Execute GET/POST/PUT/DELETE right in the browser
+
+Instantly see the response
+
+This makes Swagger a live testing playground — no need to open Postman.
